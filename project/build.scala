@@ -10,7 +10,7 @@ object GameBuild extends Build {
     libgdxVersion := "1.9.1",
     javacOptions ++= Seq("-source", "1.7", "-target", "1.7", "-encoding", "UTF-8"),
     scalacOptions in Compile += "-feature",
-    unmanagedResourceDirectories in Compile += file("core/assets")
+    unmanagedResourceDirectories in Compile += file("assets")
   )
 
   lazy val core = (project in file("core"))
